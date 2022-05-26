@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./airbackgroundsmall.jpg");
+  background-position: top center;
+  background-repeat:space;
+  background-color:#25497e;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+}
+
+.container {
+  perspective: 1500px;
+  margin-bottom: 30px;
+
+}
+
+.seat {
+padding-right:5px;
+cursor: pointer;
+fill: yellow;
+
+}
+
+.seat.selected {
+  fill:lightskyblue;
+  cursor: pointer;
+} 
+
+.seat.occupied {
+ fill:#ad276a;
+ cursor:progress;
+}
+
+.seat:not(.occupied):hover {
+  cursor: pointer;
+  fill: #ad276a;
+ }
+
+.showcase .seat:not(.occupied):hover {
+  cursor: default;
+  background-color:yellow;;
+}
+
+.showcase {
+  background-color: rgba(56, 175, 230, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #ad276a;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.showcase li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.showcase li small {
+  margin-left: 10px;
+}
+
+.seatsquare{
+  width: 1rem;
+  height: 1rem;
+  background-color: yellow;
+  border-radius: 15px;
+}
+
+.seatoccupiedsquare{
+  width: 1rem;
+  height: 1rem;
+  background-color: #ad276a;
+  border-radius: 15px;
+}
+
+.seatselectedsquare{
+  width: 1rem;
+  height: 1rem;
+  background-color: lightskyblue;
+  border-radius: 15px;
+}
+
+
+h3.text {
+  margin: 5px 0;
+  color: #ad276a;
+}
+
+h3.text span {
+  color: #13656d;
+}

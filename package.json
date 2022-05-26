@@ -1,0 +1,34 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./backend/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node"
+    
+  },
+  "keywords": [],
+  "author": "Jaroslaw Wewiora <jaroslaw.wewiora@wp.pl> (http://www.wewiora.art.pl/)",
+  "license": "ISC",
+  "dependencies": {
+    "alert": "^5.0.10",
+    "async": "^3.2.3",
+    "bcrypt": "^5.0.1",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.6",
+    "email-validator": "^2.0.4",
+    "express": "^4.17.3",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.17.2",
+    "mongoose": "^6.2.8",
+    "mongoose-ref-validator": "^1.0.21",
+    "mongoose-unique-validator": "^3.0.0",
+    "morgan": "^1.10.0",
+    "node-localstorage": "^2.2.1",
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0",
+    "popups": "^1.1.3"
+  }
+}
